@@ -1,0 +1,129 @@
+* {
+  padding: 5px;
+  margin: 5px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+#logo {
+  width: 80px;
+  display: block;
+}
+
+header {
+  display: flex;
+  align-items: center; /* Vertically centers the logo and the nav links */
+  justify-content: space-between; /* Pushes the logo to the left and nav to the right */
+  padding: 10px 20px; /* Gives the header some breathing room from the screen edge */
+}
+
+nav a {
+  text-decoration: none;
+  color: #020219;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+nav a:hover {
+  border-color: #4d5c3b;
+  }
+
+nav a.active {
+  color: white; 
+  background-color: #6496a8; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+footer {
+  border-top: 1px solid rgba(245,245,247,.12);
+  padding: 18px 16px;
+  text-align: center;
+  color: rgba(12, 8, 34, 0.671);
+  }
+
+  th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: fit-content;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+form * {
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
+.container {
+  display: grid; 
+  grid-template-areas:   
+    'header header'
+    'nav_bar nav_bar'
+    'main main-img'
+    'footer footer';
+}
+
+.header {
+   grid-area: header; 
+}
+.nav_bar {
+   grid-area: nav_bar;
+   display: flex; 
+   justify-content: right;   
+}
+
+.main {
+  grid-area: main; 
+}
+.main_img {
+   grid-area: main-img; 
+}
+.footer {
+   grid-area: footer;
+}
+
+
+#longIntro {
+    display: none;
+}
+
+#readLess {
+    display: none;
+}
+
+#readMore, #readLess {
+    background-color: #3b4d5c; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#readMore:hover, #readLess:hover {
+    background-color: #6496a8;
+}
+
+
+#checkoutSection {
+    display: none; 
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+
