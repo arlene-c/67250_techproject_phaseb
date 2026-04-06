@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-4.0.0-beta.min.js"></script>
+    <script src="../static/script.js" defer></script>
+    <title>Buy Tickets | MonoMuse</title>
+</head>
+
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="buytickets.html">Buy Tickets</a> 
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+        </nav>
+
+        <main class="main">
+            <h2>Admission & Schedule</h2>
+            <p>General Admission: $25 | Students/Seniors: $15</p>
+
+            <table border="1" style="width:100%; text-align:center; margin-bottom: 20px;">
+                <tr>
+                    <th>Date</th>
+                    <th>Availability</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Friday, Oct 15</td>
+                    <td>Available</td>
+                    <td><button onclick="revealForm()">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>Saturday, Oct 16</td>
+                    <td>Limited</td>
+                    <td><button onclick="revealForm()">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>Sunday, Oct 17</td>
+                    <td>Available</td>
+                    <td><button onclick="revealForm()">Buy Now</button></td>
+                </tr>
+            </table>
+
+            <div id="checkoutSection">
+                <h3>Secure Checkout</h3>
+                <form id="purchaseForm" onsubmit="event.preventDefault();">
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" required><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" required><br><br>
+
+                    <label for="tickets">Number of Tickets:</label><br>
+                    <input type="number" id="tickets" min="1" max="10" required><br><br>
+
+                    <label for="date">Selected Date:</label><br>
+                    <select id="date">
+                        <option>Friday, April 17</option>
+                        <option>Saturday, April 18</option>
+                        <option>Sunday, April 19</option>
+                    </select><br><br>
+
+                    <button type="button" onclick="submitPurchase()">Submit Payment</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; MonoMuse. All rights reserved.</p>
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arlene Chang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <script src="https://code.jquery.com/jquery-4.0.0-beta.min.js"></script>
+    <script src="../static/script.js" defer></script>
+
+    
+</head>
+
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+        </nav>
+        <main class="main">
+            <h1>Exhibitions</h1>
+            <h2>Exhibition 1: Digital Dreams: Art in the Age of Algorithms</h2>
+            <p>This exhibition explores how artists are using algorithms, artifical intelligence, and generative tools to create new forms of digital expression. Through interactive displays and dynamic visuals, visitors can see how machines and human creativity work together to produce art that evolves in real time.</p>
+            <h2>Exhibition 2: Code & Canvas: The Language of Creative Technology</h2>
+            <p>Code & Canvas highlights the ways programming as become a medium for artistic creation. Featuring works by digital artists and designers, the exhibition showcases installations, projections, and interactive pieces that reveal how lines of code can transform into immersive visual experiences.</p>
+        </main>
+        <figure class="main_figure">
+            <iframe src="https://www.youtube.com/embed/AZoKElBwKCs?si=9GNupmFN9X3nc6ZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <footer class="footer">
+            <p>&copy; MonoMuse. All rights reserved.</p>
+            <p id="copyYear"></p>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>
