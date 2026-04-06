@@ -79,6 +79,7 @@ function toggleMenu() {
 
 /*Leafleft map initialization and creation */
 if (document.getElementById('map')) {
+    /*Pittsburgh address coordinates*/
     var map = L.map('map').setView([40.4406, -79.9959], 13);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
