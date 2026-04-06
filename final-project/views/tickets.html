@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arlene Chang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <script src="https://code.jquery.com/jquery-4.0.0-beta.min.js"></script>
+    <script src="../static/script.js" defer></script>
+    <title>Tickets & Membership</title>
+
+    
+</head>
+
+<body onload="addYear()">
+
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets & Membership</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+        </nav>
+        <main class="main">
+            <h2>Buy Tickets</h2>
+            <table>
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Adult</td>
+                    <td>General admission for ages 18 and over. Under 18 free of charge.</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>Student</td>
+                    <td>Student ID required</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Member</td>
+                    <td>Member ID required</td>
+                    <td>$15</td>
+                </tr>
+            </table>
+            
+            
+            
+            <h2>Membership and Donations</h2>
+            <p>Support MonoMuse by becoming a member or making a donation. 
+            Your contribution helps us create innovative exhibitions and educational 
+            programs that inspire creativity and curiosity. </p>
+
+            <p>Members get discounted tickets and access to special events. </p>
+            <!--Button to join membership (placeholder)*/ -->
+            <a href="javascript:void(0);" class="member-button">Join Membership</a>
+
+        </main>
+        <figure class="main_figure"></figure>
+        <footer class="footer">
+            <p>&copy; MonoMuse. All rights reserved.</p>
+            <p id="copyYear"></p>
+            <p>CONTACT US: info@monomuse.com | (349)-206-5002</p>
+        </footer>
+
+    </div>
+
+
+    
+
+
+</body>
+
+</html>
