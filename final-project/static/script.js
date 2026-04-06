@@ -66,10 +66,6 @@ function revealForm() {
     }
 }
 
-function submitPurchase() {
-    alert("Redirecting to payment system.");
-}
-
 
 
 function toggleMenu() {
@@ -99,6 +95,7 @@ function calculatePrice() {
     document.getElementById('totalPrice').innerText = total;
 }
 
+/*Citation: external sources used -- https://www.w3schools.com/js/js_regexp.asp */
 /* Submit purchase function, displaying errors and warnings when inputs are invalid*/
 function submitPurchase() {
     const name = document.getElementById('name').value;
