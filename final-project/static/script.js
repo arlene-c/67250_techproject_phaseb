@@ -29,6 +29,7 @@ function addYear() {
         year.innerHTML = currentYear;
     }
 }
+addYear();
 
 
 /* Highlighting active navigation link */
